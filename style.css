@@ -163,6 +163,14 @@ nav .right a:last-child{
     border: 1.5px solid lightgray;
     border-radius: 5px;
     margin: 10px;
+    cursor: pointer;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+}
+.skills .cells .cell:hover {
+    transform: perspective(800px) rotateX(10deg) rotateY(10deg) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
 }
 .skills .cells .cell img{
     width: 30px;
@@ -331,3 +339,4 @@ nav .right a:last-child{
     }
 
 }
+
